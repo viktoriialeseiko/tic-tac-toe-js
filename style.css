@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: #104F63;
+    color: white;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin: 30px;
+}
+h3{
+    height: 50px;
+}
+
+.cell{
+    border: 2px solid white;
+}
+
+.blue{
+    color: rgb(255, 136, 0);
+}
+.blue::after{
+    display: block;
+    content: 'X';
+    font-size: 60px;
+    line-height: 100px;
+}
+.red{
+    color: rgb(44, 255, 2);
+}
+.red::after{
+    display: block;
+    content: 'O';
+    font-size: 60px;
+    line-height: 100px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
